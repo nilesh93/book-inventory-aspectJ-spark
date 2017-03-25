@@ -11,26 +11,16 @@ import java.sql.SQLException;
 
 public class UserServiceImpl implements UserService {
     private UserDataAccessLayer userDataAccessLayer = new UserDataAccessLayerImpl();
+
     @Override
-    public User loginUser(String body, Response res){
+    public User getUser(String body, Response res) throws SQLException {
         User user=  new Gson().fromJson(body, User.class);
-        try {
-            return userDataAccessLayer.login(user.getUserName(),user.getPassword());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return new User(user.getUserName(),"");
+         return userDataAccessLayer.login(user.getUserName(),user.getPassword());
     }
 
     @Override
-    public User registerUser(String body, Response res){
+    public User create(String body, Response res) throws SQLException{
         User user=  new Gson().fromJson(body, User.class);
-        try {
-            return userDataAccessLayer.register(user);
-        } catch (SQLException e) {
-
-            e.printStackTrace();
-        }
-        return user;
+        return userDataAccessLayer.register(user);
     }
 }

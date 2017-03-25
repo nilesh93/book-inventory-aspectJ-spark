@@ -14,15 +14,10 @@ import java.util.List;
 public class BookServiceImpl implements BookService{
     private BookDataAccessLayer bookDataAccessLayer = new BookDataAccessLayerImpl();
     @Override
-    public List<Book> getBooks(){
+    public List<Book> getBooks()throws SQLException{
         List<Book> books = new ArrayList<Book>();
         System.out.println("get books");
-        try {
-            return bookDataAccessLayer.list();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return books;
+        return bookDataAccessLayer.list();
     }
     @Override
     public Book create(String body, Response res)throws SQLException{

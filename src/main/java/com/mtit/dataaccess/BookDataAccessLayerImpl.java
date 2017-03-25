@@ -22,7 +22,7 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
 			return book;
 		}
 		
-		throw new SQLException();
+		throw new SQLException("Book view failed. No such book exists. ID -> " + id);
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
         if(result == 1)
         	return book;
 		
-		throw new SQLException();
+		throw new SQLException("Book Create Failed");
 	}
 
 	@Override
@@ -61,7 +61,7 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
         if(result == 1)
         	return book;
         
-        throw new SQLException();
+        throw new SQLException("No such book exists on ID -> " +  book.getId());
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
         if(result == 1)
         	return book;
 		
-        throw new SQLException();
+        throw new SQLException("No such book exisits -> "+ book.getId());
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class UserDataAccessLayerImpl implements UserDataAccessLayer {
 			return getUserFromResultSet(resultSet);
 		}
 		
-		throw new SQLException();
+		throw new SQLException("Invalid Login -> un :"+ userName);
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class UserDataAccessLayerImpl implements UserDataAccessLayer {
             user.setPassword("");
 			return   user;
 		}
-		throw new SQLException();
+		throw new SQLException("Registration failed for the user -> "+ user.getUserName());
 	}
 
 

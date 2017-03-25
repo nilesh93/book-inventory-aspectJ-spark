@@ -8,8 +8,9 @@ import java.io.IOException;
 public class Log {
     final static Logger logger = Logger.getRootLogger();
 
-    public void writeToLog(String message) throws IOException {
-        PropertyConfigurator.configure("src/com/mtit/logger/log4j.properties");
+    public void writeToLog(String message) {
+        PropertyConfigurator.configure("src/main/java/com/mtit/logger/log4j.properties");
         logger.info(message);
+        System.out.println(message);
     }
 }

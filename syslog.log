@@ -1,0 +1,89 @@
+INFO	2017-03-25 16:28:24,522	0	root	[qtp1952921100-16]	***********EXCEPTION****************
+INFO	2017-03-25 16:28:24,523	1	root	[qtp1952921100-16]	Exception Join Point :execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-03-25 16:28:24,524	2	root	[qtp1952921100-16]	Message :[SQLITE_ERROR] SQL error or missing database (no such table: Books)
+INFO	2017-03-25 16:28:24,524	2	root	[qtp1952921100-16]	*************************************
+INFO	2017-03-25 16:32:44,426	0	root	[qtp636791197-16]	************* EXCEPTION **************
+INFO	2017-03-25 16:32:44,427	1	root	[qtp636791197-16]	Method  :execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 16:32:44,428	2	root	[qtp636791197-16]	Message :[SQLITE_ERROR] SQL error or missing database (no such table: Books)
+INFO	2017-03-25 16:32:44,428	2	root	[qtp636791197-16]	**************** END ******************
+INFO	2017-03-25 16:45:05,639	0	root	[qtp174329515-16]	************* EXCEPTION **************
+INFO	2017-03-25 16:45:05,641	2	root	[qtp174329515-16]	Method  :execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 16:45:05,642	3	root	[qtp174329515-16]	Message :[SQLITE_ERROR] SQL error or missing database (no such table: Books)
+INFO	2017-03-25 16:45:05,643	4	root	[qtp174329515-16]	**************** END ******************
+INFO	2017-03-25 16:46:22,822	0	root	[qtp174329515-17]	************* EXCEPTION **************
+INFO	2017-03-25 16:46:22,825	3	root	[qtp174329515-17]	Method  :execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 16:46:22,826	4	root	[qtp174329515-17]	Message :[SQLITE_ERROR] SQL error or missing database (no such table: Books)
+INFO	2017-03-25 16:46:22,827	5	root	[qtp174329515-17]	**************** END ******************
+INFO	2017-03-25 17:04:47,637	0	root	[qtp948702697-17]	Execution Starting : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:04:47,756	119	root	[qtp948702697-17]	************* EXCEPTION **************
+INFO	2017-03-25 17:04:47,757	120	root	[qtp948702697-17]	Method  :execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:04:47,758	121	root	[qtp948702697-17]	Message :[SQLITE_ERROR] SQL error or missing database (no such table: Books)
+INFO	2017-03-25 17:04:47,758	121	root	[qtp948702697-17]	**************** END ******************
+INFO	2017-03-25 17:04:47,759	122	root	[qtp948702697-17]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:07:24,458	0	root	[qtp636791197-16]	Execution Starting : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:07:24,549	91	root	[qtp636791197-16]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:16:52,929	0	root	[qtp948702697-17]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:19:33,003	0	root	[qtp948702697-16]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:20:05,792	0	root	[qtp777940252-17]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:23:44,969	0	root	[qtp777940252-16]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:26:13,072	0	root	[qtp1594351243-17]	Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:26:13,074	2	root	[qtp1594351243-17]	Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:26:13,160	88	root	[qtp1594351243-17]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:30:22,457	249385	root	[qtp1594351243-18]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:30:36,024	0	root	[qtp776804592-16]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:40:47,557	0	root	[qtp1388614510-16]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:40:47,558	1	root	[qtp1388614510-16]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:40:47,649	92	root	[qtp1388614510-16]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:41:20,083	0	root	[qtp1804489270-16]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:41:20,084	1	root	[qtp1804489270-16]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:41:20,229	146	root	[qtp1804489270-16]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:07,892	0	root	[qtp1591662480-17]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:07,893	1	root	[qtp1591662480-17]	View requested : ID ->2
+INFO	2017-03-25 17:50:07,988	96	root	[qtp1591662480-17]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:24,385	16493	root	[qtp1591662480-18]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:24,385	16493	root	[qtp1591662480-18]	View requested : ID ->2
+INFO	2017-03-25 17:50:24,386	16494	root	[qtp1591662480-18]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:44,594	36702	root	[qtp1591662480-14]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:44,594	36702	root	[qtp1591662480-14]	View requested : ID ->2
+INFO	2017-03-25 17:50:44,596	36704	root	[qtp1591662480-14]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:59,016	0	root	[qtp1804489270-17]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:50:59,018	2	root	[qtp1804489270-17]	View requested : ID ->2
+INFO	2017-03-25 17:50:59,122	106	root	[qtp1804489270-17]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:51:19,489	20473	root	[qtp1804489270-18]	Listing requested : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:51:19,490	20474	root	[qtp1804489270-18]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:52:17,174	0	root	[qtp1585611287-16]	Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:52:17,176	2	root	[qtp1585611287-16]	Listing requested
+INFO	2017-03-25 17:52:17,260	86	root	[qtp1585611287-16]	Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-03-25 17:52:24,089	6915	root	[qtp1585611287-18]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:52:24,089	6915	root	[qtp1585611287-18]	View requested : ID ->2
+INFO	2017-03-25 17:52:24,090	6916	root	[qtp1585611287-18]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.view(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:53:57,419	100245	root	[qtp1585611287-13]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.create(java.lang.String, spark.Response))
+INFO	2017-03-25 17:53:57,420	100246	root	[qtp1585611287-13]	Create Object requested : {
+	"title":"Nilesh",
+	"author":"Nilesh Auth",
+	"img":"",
+	"qty":1
+}
+INFO	2017-03-25 17:53:57,429	100255	root	[qtp1585611287-13]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.create(java.lang.String, spark.Response))
+INFO	2017-03-25 17:55:04,446	167272	root	[qtp1585611287-14]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.update(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:55:04,447	167273	root	[qtp1585611287-14]	Update requested : ID ->3
+INFO	2017-03-25 17:55:04,447	167273	root	[qtp1585611287-14]	Update Object : {
+	"title":"Nilesh123",
+	"author":"Nilesh Auth",
+	"img":"",
+	"qty":1
+}
+INFO	2017-03-25 17:55:04,449	167275	root	[qtp1585611287-14]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.update(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:55:18,639	181465	root	[qtp1585611287-17]	Execution : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.update(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:55:18,640	181466	root	[qtp1585611287-17]	Update requested : ID ->5
+INFO	2017-03-25 17:55:18,648	181474	root	[qtp1585611287-17]	Update Object : {
+	"title":"Nilesh123",
+	"author":"Nilesh Auth",
+	"img":"",
+	"qty":1
+}
+INFO	2017-03-25 17:55:18,651	181477	root	[qtp1585611287-17]	************* EXCEPTION **************
+INFO	2017-03-25 17:55:18,652	181478	root	[qtp1585611287-17]	Method  :execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.update(java.lang.String, spark.Response, int))
+INFO	2017-03-25 17:55:18,653	181479	root	[qtp1585611287-17]	Message :null
+INFO	2017-03-25 17:55:18,654	181480	root	[qtp1585611287-17]	**************** END ******************
+INFO	2017-03-25 17:55:18,655	181481	root	[qtp1585611287-17]	Execution Completed : execution(public com.mtit.models.Book com.mtit.service.BookServiceImpl.update(java.lang.String, spark.Response, int))
