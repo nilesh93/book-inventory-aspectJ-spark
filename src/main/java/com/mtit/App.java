@@ -14,12 +14,13 @@ public class App {
 	public static void main(String... args) {
 
 
-//            new BookServiceImpl().getBooks();
 
+        // JSON Library
         Gson gson = new Gson();
         BookService bookService = new BookServiceImpl();
         UserService userService = new UserServiceImpl();
 
+        // Book Services
         get("/books", (req, res) -> gson.toJson(bookService.getBooks()));
         post("/books", (req, res) -> gson.toJson(bookService.create(req.body(), res)));
 
@@ -38,7 +39,7 @@ public class App {
             return gson.toJson(bookService.view(req.body(), res, id));
         });
 
-        // user
+        // User Services
         post("/login", (req, res) -> gson.toJson(userService.getUser(req.body(), res)));
         post("/register", (req, res) ->  gson.toJson(userService.create(req.body(), res)));
 

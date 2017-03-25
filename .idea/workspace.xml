@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ba721d-b3c1-4cc2-94e2-43a213608008" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtit/aspects/LoginAspect.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/aspects/LoginAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/aspects/LogginAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datasource.db" afterPath="$PROJECT_DIR$/datasource.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/App.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/aspects/TracingAspect.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/aspects/TracingAspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/dataaccess/BookDataAccessLayerImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/dataaccess/BookDataAccessLayerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/dataaccess/UserDataAccessLayerImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/dataaccess/UserDataAccessLayerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/service/BookServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/service/BookServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtit/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mtit/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/aspects/TracingAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/aspects/TracingAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/config/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/config/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/config/DatabaseConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/config/DatabaseConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/BookDataAccessLayer.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/BookDataAccessLayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/BookDataAccessLayerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/BookDataAccessLayerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/UserDataAccessLayer.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/UserDataAccessLayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/UserDataAccessLayerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/UserDataAccessLayerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/logger/Log.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/logger/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/models/Book.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/models/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/models/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/models/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/service/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/service/BookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/service/BookServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/service/BookServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/syslog.log" afterPath="$PROJECT_DIR$/syslog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/aop.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/aop.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtit/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtit/App.java" />
     </list>
     <ignored path="mtit-book-store.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,22 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BookDataAccessLayerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/BookDataAccessLayerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="128" column="47" selection-start-line="128" selection-start-column="47" selection-end-line="128" selection-end-column="47" />
-              <folding>
-                <marker date="1490458796000" expanded="true" signature="551:581" ph="SELECT * FRO... Book" />
-                <marker date="1490458796000" expanded="true" signature="1053:1095" ph="INSERT INTO Book... " />
-                <marker date="1490458796000" expanded="true" signature="1709:1767" ph="UPDATE Book " />
-                <marker date="1490458796000" expanded="true" signature="2497:2525" ph="DELETE FROM " />
-                <marker date="1490458796000" expanded="true" signature="2980:2998" ph="SELECT * FRO... Books" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserDataAccessLayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/dataaccess/UserDataAccessLayer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -152,11 +110,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mtit/aspects/FooAspect.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/aop.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtit/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtit/aspects/LoginAspect.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/book-store/src/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/book-store/src/app/login/login.component.html" />
@@ -210,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mtit/service/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtit/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtit/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtit/App.java" />
       </list>
     </option>
   </component>
@@ -1118,7 +1088,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1130,7 +1100,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6373494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49638554" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1219,16 +1189,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1425,6 +1385,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtit/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
