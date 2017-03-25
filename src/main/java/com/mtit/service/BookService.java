@@ -7,7 +7,7 @@ import spark.Response;
 import java.sql.SQLException;
 import java.util.List;
 
-
+// Book Service Interface
 public interface BookService {
 
         List<Book> getBooks() throws SQLException;

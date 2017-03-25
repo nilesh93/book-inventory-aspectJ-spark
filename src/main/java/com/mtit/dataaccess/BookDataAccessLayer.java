@@ -5,6 +5,7 @@ import com.mtit.models.Book;
 import java.sql.SQLException;
 import java.util.List;
 
+// Book Data Access Layer Interface
 public interface BookDataAccessLayer {
 	
 	 Book view(int id) throws SQLException;

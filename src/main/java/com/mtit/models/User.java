@@ -1,5 +1,6 @@
 package com.mtit.models;
 
+// Model User Definition
 public class User {
 
 

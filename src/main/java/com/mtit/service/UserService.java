@@ -5,6 +5,7 @@ import spark.Response;
 
 import java.sql.SQLException;
 
+// user Service Interfacace
 public interface UserService {
 
 	 User getUser(String body, Response res) throws SQLException;

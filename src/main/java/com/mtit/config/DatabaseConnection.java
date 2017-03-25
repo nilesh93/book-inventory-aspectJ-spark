@@ -7,7 +7,7 @@ public class DatabaseConnection {
 
     private static Connection connection = null;
 
-    // singleton
+    // singleton implememntation of db connection
     public static Connection getConnection()
     {
         if(connection == null) {
@@ -16,6 +16,7 @@ public class DatabaseConnection {
         return connection;
     }
 
+    // create connection to db
     public static void createConnection() {
         try {
             connection = DriverManager.getConnection(Constants.DATABASE_URL);
@@ -35,6 +36,7 @@ public class DatabaseConnection {
         }
     }
 
+    // run migrations on the db on initial db connect to create the database structures
     private static void runMigrations(Connection connection) {
 
         try {
@@ -57,6 +59,7 @@ public class DatabaseConnection {
         }
     }
 
+    // after running migrations, insert a default admin to the system
     private static void insertAdminMigration(Statement statement)throws SQLException{
 
         try {

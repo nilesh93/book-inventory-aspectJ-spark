@@ -9,6 +9,12 @@ import java.util.Vector;
 
 public class BookDataAccessLayerImpl implements BookDataAccessLayer {
 
+	/**
+	 * Book View
+	 * @param id
+	 * @return Book
+	 * @throws SQLException
+	 */
 	@Override
 	public Book view(int id) throws SQLException {
 		
@@ -25,6 +31,12 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
 		throw new SQLException("Book view failed. No such book exists. ID -> " + id);
 	}
 
+	/**
+	 * Book Create
+	 * @param book
+	 * @return Book
+	 * @throws SQLException
+	 */
 	@Override
 	public Book create(Book book) throws SQLException {
 		
@@ -44,6 +56,12 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
 		throw new SQLException("Book Create Failed");
 	}
 
+	/**
+	 * Book Update
+	 * @param book
+	 * @return Book
+	 * @throws SQLException
+	 */
 	@Override
 	public Book update(Book book) throws SQLException {
 		
@@ -64,6 +82,12 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
         throw new SQLException("No such book exists on ID -> " +  book.getId());
 	}
 
+	/**
+	 * Book Delete
+	 * @param book
+	 * @return deletd Book
+	 * @throws SQLException
+	 */
 	@Override
 	public Book delete(Book book) throws SQLException {
 		
@@ -78,6 +102,11 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
         throw new SQLException("No such book exisits -> "+ book.getId());
 	}
 
+	/**
+	 * Book List Viewer
+	 * @return Book List
+	 * @throws SQLException
+	 */
 	@Override
 	public List<Book> list() throws SQLException {
 		
@@ -96,6 +125,12 @@ public class BookDataAccessLayerImpl implements BookDataAccessLayer {
 		return list;
 	}
 
+    /**
+     *  Read resultset and return a Book Object
+     * @param resultSet
+     * @return Book
+     * @throws SQLException
+     */
 	private Book getBookFromResultSet(final ResultSet resultSet) throws SQLException {
 		
 		int id = resultSet.getInt("id");

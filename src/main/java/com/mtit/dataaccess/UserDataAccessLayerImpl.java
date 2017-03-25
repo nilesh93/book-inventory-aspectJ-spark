@@ -10,7 +10,13 @@ import java.sql.SQLException;
 
 public class UserDataAccessLayerImpl implements UserDataAccessLayer {
 
-
+	/**
+	 * Login Function
+	 * @param userName
+	 * @param password
+	 * @return
+	 * @throws SQLException
+	 */
 	@Override
 	public User login(String userName, String password) throws SQLException {
 		
@@ -30,6 +36,12 @@ public class UserDataAccessLayerImpl implements UserDataAccessLayer {
 		throw new SQLException("Invalid Login -> un :"+ userName);
 	}
 
+	/**
+	 * Register Function
+	 * @param user
+	 * @return
+	 * @throws SQLException
+	 */
 	@Override
 	public User register(User user) throws SQLException {
 

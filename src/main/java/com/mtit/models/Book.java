@@ -1,5 +1,6 @@
 package com.mtit.models;
 
+// Model Book Definition
 public class Book {
 
     private int id;
