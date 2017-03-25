@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+	<aspects>
+		<aspect name="com.mtit.aspects.FooAspect"/>
+		<aspect name="com.mtit.aspects.LogginAspect"/>
+	</aspects>
+	<!--<weaver options="-showWeaveInfo -debug -verbose"/>-->
+</aspectj>
