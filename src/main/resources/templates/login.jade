@@ -1,0 +1,30 @@
+extends layout
+block content
+    br
+    br
+    div.row
+        div.col-md-4
+        div.col-md-4
+            h3(style="text-align: center;") Book Management System
+            br
+            br
+            br
+
+            div(class="well bs-component")
+                form.form-horizontal
+                    fieldset
+                        legend Login
+                        div.form-group
+                            label(class="col-lg-3 control-label") Email
+                            div.col-md-9
+                                input(type="email" required="true", name="email").form-control
+                        div.form-group
+                            label(class="col-lg-3 control-label") Password
+                            div.col-md-9
+                                input(type="password" required="true", name="password").form-control
+                        div.form-group
+                            div(class="col-md-6 col-md-offset-6")
+                                button(class="btn btn-block btn-primary" ) Login
+
+
+

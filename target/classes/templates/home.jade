@@ -1,0 +1,230 @@
+extends layout
+block content
+    h3 Hello Admin
+        a(href="/")  Signout?
+
+    h4 Welcome to the Book Store
+    h4 Total Books :
+        span#totalCount
+
+
+    div.row
+        div.col-md-6
+            h3 Browse Books
+
+            table(class="table    table-hover table-striped")
+                thead
+                    tr
+                        th #
+                        th Title
+                        th Author
+                        th Qty
+                        th
+                        th
+                tbody
+                    tr
+                        td(colspan="6" )
+                            button(class="btn btn-info btn-block ", onclick="resetForm()") Add New Book
+                tbody#table
+                    tr
+                        td 1
+                        td Book 1
+                        td Author 1
+                        td  10
+                        td
+                            button(class="btn btn-primary btn-block btn-sm") View
+                        td
+                            button(class="btn btn-danger btn-block btn-sm") Delete
+
+
+        div.col-md-6
+            h3 Book Details
+            hr
+
+            div.row
+                div.col-md-8
+                    form(onsubmit="return save()" ).form-horizontal
+                        fieldset
+                            div.form-group
+                                label(class="col-lg-2 control-label") Title
+                                div.col-md-10
+                                    input(type="text", class="form-control" placeholder="Title" )#title
+                            div.form-group
+                                label(class="col-lg-2 control-label") Author
+                                div.col-md-10
+                                    input(type="text", class="form-control" placeholder="Author" )#author
+                            div.form-group
+                                label(class="col-lg-2 control-label") Image
+                                div.col-md-10
+                                    textarea( class="form-control" placeholder="Image Url", rows="6" )#url
+                            div.form-group
+                                label(class="col-lg-2 control-label") Quantity
+                                div.col-md-10
+                                    input(type="number",min="0" class="form-control" placeholder="Quantity" )#qty
+                            div.form-group
+                                div(class="col-lg-5 col-md-offset-2")
+                                    button(type="button", class="btn btn-block btn-default", onclick="res()" ) Reset
+                                div(class="col-lg-5")
+                                    button(type="submit", class="btn btn-block btn-primary") Save
+                div.col-md-4
+                    img(src="http://www.diadrasis.net/Portals/0/NewsImages/upload-empty.png",class="img-responsive")#preview
+
+
+
+
+
+block javascript
+    script.
+        var bookList = [];
+        var host = 'http://localhost:4567/';
+        var editId;
+        var defaultImg = 'http://www.diadrasis.net/Portals/0/NewsImages/upload-empty.png';
+        function getBooks() {
+            $.ajax({
+                type: 'get',
+                url: host + 'books',
+                success: function (data) {
+                    bookList = JSON.parse(data);
+                    populateTable(JSON.parse(data));
+                    document.getElementById('totalCount').innerHTML = JSON.parse(data).length;
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        }
+
+        function populateTable(array) {
+            document.getElementById('table').innerHTML = "";
+            for (var i = 0; i < array.length; i++) {
+                document.getElementById('table').innerHTML += '<td> ' + (i + 1) + ' </td> ' +
+                        '<td> ' + array[i].title + '</td>' +
+                        ' <td> ' + array[i].author + '</td>' +
+                        ' <td> ' + array[i].qty + '</td> ' +
+                        '<td> <button class="btn btn-primary btn-block btn-sm" onclick="viewBook(' + array[i].id + ')"> View </button> </td> ' +
+                        '<td> <button class="btn btn-danger btn-block btn-sm" onclick="delBook(' + array[i].id + ')"> Delete </button> </td>';
+            }
+        }
+
+
+        function delBook(id) {
+
+            swal({
+                        title: "Are you sure?",
+                        text: "You will not be able to recover this imaginary file!",
+                        type: "warning",
+                        showCancelButton: true,
+
+                        confirmButtonText: "Delete!",
+                        cancelButtonText: "Cancel",
+                        closeOnConfirm: false,
+                        closeOnCancel: true
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            $.ajax({
+                                type: 'delete',
+                                url: host + 'books/' + id,
+                                success: function (data) {
+                                    getBooks();
+                                    swal("Success!","Book Deleted successfully!", "success");
+                                },
+                                error: function (err) {
+                                    console.log(err);
+                                }
+                            });
+                        }
+                    });
+
+        }
+
+        function viewBook(id) {
+            editId = id;
+            $.ajax({
+                type: 'get',
+                url: host + 'books/' + id,
+                success: function (data) {
+                    var book = JSON.parse(data);
+
+                    $('#title').val(book.title);
+                    $('#author').val(book.author);
+                    $('#url').val(book.img);
+                    $('#qty').val(book.qty);
+
+                    if(book.img){
+                        document.getElementById('preview').setAttribute('src', book.img);
+                    }else{
+                        document.getElementById('preview').setAttribute('src',defaultImg);
+                    }
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+
+        }
+
+        function resetForm() {
+            $('#title').val('');
+            $('#author').val('');
+            $('#url').val('');
+            $('#qty').val('');
+            editId = undefined;
+            document.getElementById('preview').setAttribute('src', defaultImg);
+        }
+
+
+        function save() {
+            var book = {
+                title: $('#title').val(),
+                author: $('#author').val(),
+                img: $('#url').val(),
+                qty: $('#qty').val()
+            };
+            if (editId) {
+                $.ajax({
+                    type: 'put',
+                    url: host + 'books/' + editId,
+                    data: JSON.stringify(book),
+                    contentType: "application/json",
+                    success: function (data) {
+                        getBooks();
+                        swal("Success!", book.title+ " Updated successfully!", "success");
+                        resetForm();
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            } else {
+
+                $.ajax({
+                    type: 'post',
+                    url: host + 'books',
+                    data: JSON.stringify(book),
+                    success: function (data) {
+                        getBooks();
+                        swal("Success!", book.title + " added successfully!", "success");
+                        resetForm();
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+
+            }
+            return false;
+        }
+
+
+        function res(){
+
+            if(editId){
+                viewBook(editId);
+            }else{
+                resetForm();
+            }
+        }
+        getBooks();
+
+
