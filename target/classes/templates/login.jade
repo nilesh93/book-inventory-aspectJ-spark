@@ -11,20 +11,44 @@ block content
             br
 
             div(class="well bs-component")
-                form.form-horizontal
+                form(onsubmit="return login()" ).form-horizontal
                     fieldset
                         legend Login
                         div.form-group
                             label(class="col-lg-3 control-label") Email
                             div.col-md-9
-                                input(type="email" required="true", name="email").form-control
+                                input(type="text" required="true", id="userName", name="userName").form-control
                         div.form-group
                             label(class="col-lg-3 control-label") Password
                             div.col-md-9
-                                input(type="password" required="true", name="password").form-control
+                                input(type="password" required="true",id="password", name="password").form-control
                         div.form-group
                             div(class="col-md-6 col-md-offset-6")
                                 button(class="btn btn-block btn-primary" ) Login
 
 
 
+
+block javascript
+    script.
+        function login(){
+            $.ajax({
+                type: 'post',
+                url: host + 'login',
+                data: JSON.stringify({
+                    userName: $('#userName').val(),
+                    password: $('#password').val()
+                }),
+                contentType: "application/json",
+                success: function (data) {
+                   sessionStorage.setItem('Login',data);
+                   window.location = host + 'home';
+                },
+                error: function (err) {
+                    swal("Error!","Invalid Login! Please try again","error");
+                    console.log(err);
+                }
+            });
+
+            return false;
+        }

@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUser(String body, Response res) throws SQLException {
         User user=  new Gson().fromJson(body, User.class);
-         return userDataAccessLayer.login(user.getUserName(),user.getPassword());
+        return userDataAccessLayer.login(user.getUserName(),user.getPassword());
     }
 
     /**

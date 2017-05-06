@@ -1088,3 +1088,100 @@ INFO	2017-04-27 14:44:44,062	280	root	[qtp2098262375-16]	Data Access Execution :
 INFO	2017-04-27 14:44:44,063	281	root	[qtp2098262375-16]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
 INFO	2017-04-27 14:44:44,065	283	root	[qtp2098262375-16]	Data Access Execution Completed : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
 INFO	2017-04-27 14:44:44,066	284	root	[qtp2098262375-16]	Service Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:41:04,284	0	root	[qtp931780966-15]	Service Execution : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:41:04,286	2	root	[qtp931780966-15]	Listing requested
+INFO	2017-05-06 13:41:04,290	6	root	[qtp931780966-15]	************* Service EXCEPTION **************
+INFO	2017-05-06 13:41:04,290	6	root	[qtp931780966-15]	Method  :execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:41:04,293	9	root	[qtp931780966-15]	Message :null
+INFO	2017-05-06 13:41:04,294	10	root	[qtp931780966-15]	**************** END *************************
+INFO	2017-05-06 13:41:04,294	10	root	[qtp931780966-15]	Service Execution Completed : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:45,957	101673	root	[qtp931780966-12]	Service Execution : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:45,958	101674	root	[qtp931780966-12]	Listing requested
+INFO	2017-05-06 13:42:45,965	101681	root	[qtp931780966-12]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:46,061	101777	root	[qtp931780966-12]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:46,062	101778	root	[qtp931780966-12]	************* Data Access EXCEPTION **************
+INFO	2017-05-06 13:42:46,062	101778	root	[qtp931780966-12]	Method  :execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:46,063	101779	root	[qtp931780966-12]	Message :Invalid Login -> un :asds
+INFO	2017-05-06 13:42:46,063	101779	root	[qtp931780966-12]	**************** END *****************************
+INFO	2017-05-06 13:42:46,066	101782	root	[qtp931780966-12]	************* Service EXCEPTION **************
+INFO	2017-05-06 13:42:46,066	101782	root	[qtp931780966-12]	Method  :execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:46,067	101783	root	[qtp931780966-12]	Message :Invalid Login -> un :asds
+INFO	2017-05-06 13:42:46,068	101784	root	[qtp931780966-12]	**************** END *************************
+INFO	2017-05-06 13:42:46,068	101784	root	[qtp931780966-12]	Service Execution Completed : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:47,271	102987	root	[qtp931780966-17]	Service Execution : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:47,274	102990	root	[qtp931780966-17]	Listing requested
+INFO	2017-05-06 13:42:47,278	102994	root	[qtp931780966-17]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:47,283	102999	root	[qtp931780966-17]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:47,284	103000	root	[qtp931780966-17]	************* Data Access EXCEPTION **************
+INFO	2017-05-06 13:42:47,286	103002	root	[qtp931780966-17]	Method  :execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:42:47,287	103003	root	[qtp931780966-17]	Message :Invalid Login -> un :asds
+INFO	2017-05-06 13:42:47,288	103004	root	[qtp931780966-17]	**************** END *****************************
+INFO	2017-05-06 13:42:47,289	103005	root	[qtp931780966-17]	************* Service EXCEPTION **************
+INFO	2017-05-06 13:42:47,290	103006	root	[qtp931780966-17]	Method  :execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:42:47,290	103006	root	[qtp931780966-17]	Message :Invalid Login -> un :asds
+INFO	2017-05-06 13:42:47,291	103007	root	[qtp931780966-17]	**************** END *************************
+INFO	2017-05-06 13:42:47,292	103008	root	[qtp931780966-17]	Service Execution Completed : execution(public com.mtit.models.User com.mtit.service.UserServiceImpl.getUser(java.lang.String, spark.Response))
+INFO	2017-05-06 13:43:28,195	0	root	[qtp1727317189-15]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:43:28,353	158	root	[qtp1727317189-15]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:43:28,354	159	root	[qtp1727317189-15]	************* Data Access EXCEPTION **************
+INFO	2017-05-06 13:43:28,355	160	root	[qtp1727317189-15]	Method  :execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:43:28,357	162	root	[qtp1727317189-15]	Message :Invalid Login -> un :asds
+INFO	2017-05-06 13:43:28,358	163	root	[qtp1727317189-15]	**************** END *****************************
+INFO	2017-05-06 13:44:55,397	87202	root	[qtp1727317189-18]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:44:55,397	87202	root	[qtp1727317189-18]	Data Access Execution : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:44:55,398	87203	root	[qtp1727317189-18]	Data Access Execution Completed : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:44:55,399	87204	root	[qtp1727317189-18]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:03,810	0	root	[qtp910533266-19]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:03,888	78	root	[qtp910533266-19]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:03,888	78	root	[qtp910533266-19]	************* Data Access EXCEPTION **************
+INFO	2017-05-06 13:55:03,889	79	root	[qtp910533266-19]	Method  :execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:03,891	81	root	[qtp910533266-19]	Message :Invalid Login -> un :asdasd
+INFO	2017-05-06 13:55:03,891	81	root	[qtp910533266-19]	**************** END *****************************
+INFO	2017-05-06 13:55:15,679	11869	root	[qtp910533266-12]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:15,680	11870	root	[qtp910533266-12]	Data Access Execution : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:15,681	11871	root	[qtp910533266-12]	Data Access Execution Completed : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:15,681	11871	root	[qtp910533266-12]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:55:15,998	12188	root	[qtp910533266-15]	Service Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:55:15,999	12189	root	[qtp910533266-15]	Listing requested
+INFO	2017-05-06 13:55:16,000	12190	root	[qtp910533266-15]	Data Access Execution : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:55:16,001	12191	root	[qtp910533266-15]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:16,002	12192	root	[qtp910533266-15]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:16,004	12194	root	[qtp910533266-15]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:16,005	12195	root	[qtp910533266-15]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:55:16,006	12196	root	[qtp910533266-15]	Data Access Execution Completed : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:55:16,010	12200	root	[qtp910533266-15]	Service Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:58:21,949	0	root	[qtp1727317189-16]	Service Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:58:21,951	2	root	[qtp1727317189-16]	Listing requested
+INFO	2017-05-06 13:58:21,954	5	root	[qtp1727317189-16]	Data Access Execution : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:58:22,085	136	root	[qtp1727317189-16]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:58:22,091	142	root	[qtp1727317189-16]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:58:22,093	144	root	[qtp1727317189-16]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:58:22,094	145	root	[qtp1727317189-16]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:58:22,095	146	root	[qtp1727317189-16]	Data Access Execution Completed : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:58:22,095	146	root	[qtp1727317189-16]	Service Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:59:58,696	0	root	[qtp931780966-13]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:59:58,772	76	root	[qtp931780966-13]	Data Access Execution : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:58,773	77	root	[qtp931780966-13]	Data Access Execution Completed : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:58,774	78	root	[qtp931780966-13]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 13:59:59,075	379	root	[qtp931780966-18]	Service Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 13:59:59,076	380	root	[qtp931780966-18]	Listing requested
+INFO	2017-05-06 13:59:59,077	381	root	[qtp931780966-18]	Data Access Execution : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:59:59,078	382	root	[qtp931780966-18]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:59,079	383	root	[qtp931780966-18]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:59,080	384	root	[qtp931780966-18]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:59,082	386	root	[qtp931780966-18]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 13:59:59,084	388	root	[qtp931780966-18]	Data Access Execution Completed : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 13:59:59,085	389	root	[qtp931780966-18]	Service Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 14:00:08,583	9887	root	[qtp931780966-13]	Data Access Execution : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 14:00:08,584	9888	root	[qtp931780966-13]	Data Access Execution : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,586	9890	root	[qtp931780966-13]	Data Access Execution Completed : execution(private com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.getUserFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,589	9893	root	[qtp931780966-13]	Data Access Execution Completed : execution(public com.mtit.models.User com.mtit.dataaccess.UserDataAccessLayerImpl.login(java.lang.String, java.lang.String))
+INFO	2017-05-06 14:00:08,766	10070	root	[qtp931780966-19]	Service Execution : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())
+INFO	2017-05-06 14:00:08,768	10072	root	[qtp931780966-19]	Listing requested
+INFO	2017-05-06 14:00:08,768	10072	root	[qtp931780966-19]	Data Access Execution : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 14:00:08,769	10073	root	[qtp931780966-19]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,770	10074	root	[qtp931780966-19]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,771	10075	root	[qtp931780966-19]	Data Access Execution : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,772	10076	root	[qtp931780966-19]	Data Access Execution Completed : execution(private com.mtit.models.Book com.mtit.dataaccess.BookDataAccessLayerImpl.getBookFromResultSet(java.sql.ResultSet))
+INFO	2017-05-06 14:00:08,774	10078	root	[qtp931780966-19]	Data Access Execution Completed : execution(public java.util.List com.mtit.dataaccess.BookDataAccessLayerImpl.list())
+INFO	2017-05-06 14:00:08,775	10079	root	[qtp931780966-19]	Service Execution Completed : execution(public java.util.List com.mtit.service.BookServiceImpl.getBooks())

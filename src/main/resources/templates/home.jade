@@ -1,7 +1,13 @@
 extends layout
+
+block redirect
+    script.
+        if (!sessionStorage.getItem('Login')) {
+            window.location = host;
+        }
 block content
     h3 Hello Admin
-        a(href="/")  Signout?
+        a(href="javascript:void()", onclick="logout()" )  Signout?
 
     h4 Welcome to the Book Store
     h4 Total Books :
@@ -76,7 +82,6 @@ block content
 block javascript
     script.
         var bookList = [];
-        var host = 'http://localhost:4567/';
         var editId;
         var defaultImg = 'http://www.diadrasis.net/Portals/0/NewsImages/upload-empty.png';
         function getBooks() {
